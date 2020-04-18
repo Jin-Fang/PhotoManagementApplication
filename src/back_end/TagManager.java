@@ -145,7 +145,11 @@ public class TagManager implements Serializable {
 	 * @see back_end.TagManager#tagList
 	 */
 	public static Tag getTagAtIndex(int i) {
-		return TagManager.tagList.get(i);
+		if (i < TagManager.tagList.size()){
+			return TagManager.tagList.get(i);
+		}else{
+			return (Tag) null;
+		}
 	}
 
 	/**

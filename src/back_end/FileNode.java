@@ -519,7 +519,7 @@ public class FileNode implements Serializable{
 				}
 			}
 			for (Tag t : temp){
-				TagManager.addTag(t);
+				AddTag.addTag(t);
 			}
 		}
 	public void setOldNames(Map<String, ArrayList<Tag>> anotherOldNames) {
